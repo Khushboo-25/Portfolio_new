@@ -242,6 +242,7 @@ section{
 
 
 .about .box-container .box p{
+    text-align:left;
     font-size: 1.5rem ;
     line-height: 1.8;
     color: var(--light-color);
