@@ -78,7 +78,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 9%;
-    background: #fff;
+    background: #707070;
     box-shadow: var(--box-shadow);
 }
 .header .logo{
@@ -523,27 +523,27 @@ section{
 /* ================= THEME TOGGLE ================= */
 
 body.light-mode{
-    --green: #5b21b6;
+    --green: #271e36;
     --black: #1f2937;
-    --light-color: #4b5563;
+    --light-color: #262b31;
     --box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.15);
 
-    background: #f8fafc;
+    background: #c9c1c1;
 }
 
 body.light-mode .header{
-    background: #ffffff;
+    background: #828282;
 }
 
 body.light-mode .about .box-container .box,
 body.light-mode .skills .box-container .box,
 body.light-mode .works .work-slider .box,
 body.light-mode .contact{
-    background: #ffffff;
+    background: #959595;
 }
 
 body.light-mode .header .icons div{
-    background: #e5e7eb;
+    background: #939394;
     color: #1f2937;
 }
 
@@ -601,4 +601,3 @@ body.light-mode .header .icons div{
     }
     
 }
-
