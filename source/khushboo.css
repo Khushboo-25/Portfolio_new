@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,700;1,900&family=Playpen+Sans:wght@300;400;500&display=swap');
 
 :root{
-    --green: green;
-    --black: #130f40;
-    --light-color: #666;
-    --box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1); 
+    --green: #3c1560;        /* royal purple haze accent */
+    --black: #f5f3ff;        /* soft white text */
+    --light-color: #b3a6d6;  /* muted lavender text */
+    --box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.85);
 
-    --border: .2rem solid rgba(0,0,0.1); 
-    --outline: 0.1rem solid #666; 
+    --border: .2rem solid rgba(255,255,255,0.06);
+    --outline: 0.1rem solid rgba(255,255,255,0.08);
 }
 
 html 
@@ -19,9 +19,9 @@ html
     scroll-padding-top: 7rem;
 }
 body{
-    background: #eee;
-    
+    background: #0b0911; /* deep purple-black */
 }
+
 *{
     font-family: 'Merriweather', serif;
     font-family: 'Playpen Sans', cursive;
@@ -185,6 +185,8 @@ section{
     background: url(../source/images/intro3.jpg) no-repeat;
     background-position: center;
     background-size: cover;
+    margin:102px 0 25px 0;
+    height: 128px;
     padding-top: 25rem;
     padding-bottom: 20rem;
 }
@@ -422,6 +424,127 @@ section{
 }
 
 /* contact */
+.header{
+    background: #120a1f;
+}
+.header .logo{
+    color: #f5f3ff;
+}
+.header .logo i{
+    color: var(--green);
+}
+.header .navbar a{
+    color: #e9e4ff;
+}
+.header .navbar a:hover{
+    color: var(--green);
+}
+.header .icons div{
+    background: #1b1230;
+    color: #e9e4ff;
+}
+.header .icons div:hover{
+    background: var(--green);
+    color: #0b0616;
+}
+.header .search-form{
+    background: #120a1f;
+}
+.header .search-form input{
+    color: #f5f3ff;
+}
+.header .search-form label{
+    color: #b3a6d6;
+}
+.header .search-form label:hover{
+    color: var(--green);
+}
+.home .content h3{
+    color: #faf9ff;
+}
+.home .content p{
+    color: #d6ccff;
+}
+.about .box-container .box,
+.skills .box-container .box,
+.works .work-slider .box,
+.contact{
+    background: #191423;
+}
+.about .box-container .box h3,
+.skills .box-container .box h3,
+.works .work-slider .box h3,
+.contact .box-container .box h3{
+    color: #faf9ff;
+}
+.about .box-container .box p,
+.skills .box-container .box p,
+.works .work-slider .box .price,
+.contact .box-container .box p,
+.contact .box-container .box .links{
+    color: var(--light-color);
+}
+.about .box-container .box:hover,
+.skills .box-container .box:hover,
+.works .work-slider .box:hover{
+    box-shadow: 0 0 0 1px rgba(168,85,247,0.45);
+}
+.btn,
+.btn1{
+    border: .2rem solid #2d1b4d;
+    color: #f5f3ff;
+}
+.btn:hover{
+    background: var(--green);
+    color: #0b0616;
+}
+.btn1:hover{
+    background: #6d28d9; /* deep purple hover */
+    color: #fff;
+}
+.contact .box-container .box .share a{
+    background: #1b1230;
+    color: #e9e4ff;
+}
+.contact .box-container .box .share a:hover{
+    background: var(--green);
+    color: #0b0616;
+}
+.contact .credit{
+    color: #d6ccff;
+}
+.contact .credit span{
+    color: var(--green);
+}
+
+/* ================= THEME TOGGLE ================= */
+
+body.light-mode{
+    --green: #5b21b6;
+    --black: #1f2937;
+    --light-color: #4b5563;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.15);
+
+    background: #f8fafc;
+}
+
+body.light-mode .header{
+    background: #ffffff;
+}
+
+body.light-mode .about .box-container .box,
+body.light-mode .skills .box-container .box,
+body.light-mode .works .work-slider .box,
+body.light-mode .contact{
+    background: #ffffff;
+}
+
+body.light-mode .header .icons div{
+    background: #e5e7eb;
+    color: #1f2937;
+}
+
+
 
 /* media queries*/
 @media (max-width:991px)
@@ -436,6 +559,7 @@ section{
         padding: 2rem;
     }
 }
+
 @media (max-width:768px)
 {
     #menu-btn{
