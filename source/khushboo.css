@@ -182,7 +182,10 @@ section{
     /* border: 1px solid; */
     display: flex;
     justify-content: center;
-    background: url(../source/images/intro3.jpg) no-repeat;
+    background: linear-gradient(
+            rgba(11, 9, 17, 0.6),
+            rgba(11, 9, 17, 0.6)
+        ),url(../source/images/intro3.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     margin:102px 0 25px 0;
@@ -598,3 +601,4 @@ body.light-mode .header .icons div{
     }
     
 }
+
