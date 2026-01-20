@@ -48,3 +48,13 @@ document.addEventListener("DOMContentLoaded", function () {
 AOS.init({
   duration:1000
 })
+// ================= THEME TOGGLE =================
+
+const toggleBtn = document.getElementById("theme-toggle");
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+
+    toggleBtn.classList.toggle("fa-moon-o");
+    toggleBtn.classList.toggle("fa-sun-o");
+});
