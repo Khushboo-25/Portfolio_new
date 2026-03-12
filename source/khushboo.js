@@ -1,11 +1,11 @@
-/* ======================================================
-   Khushboo Chaurasiya — Portfolio JS
+﻿/* ======================================================
+   Khushboo Chaurasiya â€” Portfolio JS
    Features: typed animation, active nav scroll spy,
    scroll progress bar, back-to-top, mobile menu,
    dark/light mode toggle, contact form handler
 ====================================================== */
 
-// ── Declarations first to avoid hoisting issues ──────
+// â”€â”€ Declarations first to avoid hoisting issues â”€â”€â”€â”€â”€â”€
 const navbar    = document.getElementById('navbar');
 const menuBtn   = document.getElementById('menu-btn');
 const themeIcon = document.getElementById('theme-icon');
@@ -13,7 +13,7 @@ const themeToggle = document.getElementById('theme-toggle');
 const backTop   = document.getElementById('back-top');
 const progress  = document.getElementById('scroll-progress');
 
-// ── Mobile Menu ───────────────────────────────────────
+// â”€â”€ Mobile Menu â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 menuBtn.addEventListener('click', () => {
     navbar.classList.toggle('active');
 });
@@ -30,7 +30,7 @@ navbar.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => navbar.classList.remove('active'));
 });
 
-// ── Scroll Progress + Back-to-Top ────────────────────
+// â”€â”€ Scroll Progress + Back-to-Top â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 window.addEventListener('scroll', () => {
     const scrollTop  = window.scrollY;
     const docHeight  = document.documentElement.scrollHeight - window.innerHeight;
@@ -50,7 +50,7 @@ backTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ── Active Nav Highlight (Intersection Observer) ──────
+// â”€â”€ Active Nav Highlight (Intersection Observer) â”€â”€â”€â”€â”€â”€
 const sections = document.querySelectorAll('section[id]');
 const navLinks  = document.querySelectorAll('.nav-link[href^="#"]');
 
@@ -76,7 +76,7 @@ const sectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(section => sectionObserver.observe(section));
 
-// ── Dark / Light Mode Toggle ──────────────────────────
+// â”€â”€ Dark / Light Mode Toggle â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const savedTheme = localStorage.getItem('kp-theme');
 if (savedTheme === 'light') {
     document.body.classList.add('light-mode');
@@ -89,7 +89,7 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('kp-theme', isLight ? 'light' : 'dark');
 });
 
-// ── Typed Text Animation ──────────────────────────────
+// â”€â”€ Typed Text Animation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const roles = [
     'Full Stack Developer',
     'MERN Stack Engineer',
@@ -136,7 +136,7 @@ function typeWriter() {
 // Start after a short initial delay
 setTimeout(typeWriter, 600);
 
-// ── Contact Form Handler (Formspree AJAX) ────────────
+// â”€â”€ Contact Form Handler (Formspree AJAX) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 async function handleFormSubmit(e) {
     e.preventDefault();
     const form      = e.target;
@@ -152,14 +152,14 @@ async function handleFormSubmit(e) {
 
     // If the placeholder endpoint is still in place, warn the developer
     if (!endpoint || endpoint.includes('YOUR_FORM_ID')) {
-        status.textContent = '⚠ Set your Formspree endpoint in the HTML form to enable real email delivery.';
+        status.textContent = 'âš  Set your Formspree endpoint in the HTML form to enable real email delivery.';
         status.style.color = '#fbbf24';
         return;
     }
 
     // Loading state
     submitBtn.disabled  = true;
-    btnText.textContent = 'Sending…';
+    btnText.textContent = 'Sendingâ€¦';
     status.textContent  = '';
 
     try {
@@ -170,18 +170,18 @@ async function handleFormSubmit(e) {
         });
 
         if (response.ok) {
-            status.textContent = '✔ Message sent! I\'ll get back to you soon.';
+            status.textContent = 'âœ” Message sent! I\'ll get back to you soon.';
             status.style.color = '#81e6a0';
             form.reset();
         } else {
             const data = await response.json().catch(() => ({}));
             const msg  = data?.errors?.map(err => err.message).join(', ')
                          || 'Something went wrong. Try emailing me directly.';
-            status.textContent = '✗ ' + msg;
+            status.textContent = 'âœ— ' + msg;
             status.style.color = '#f87171';
         }
     } catch {
-        status.textContent = '✗ Network error — please email me directly at khushboo250104@gmail.com';
+        status.textContent = 'âœ— Network error â€” please email me directly at khushboo250104@gmail.com';
         status.style.color = '#f87171';
     } finally {
         submitBtn.disabled  = false;
@@ -191,7 +191,7 @@ async function handleFormSubmit(e) {
     }
 }
 
-// ── AOS Init ─────────────────────────────────────────
+// â”€â”€ AOS Init â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 AOS.init({
     duration: 800,
     easing: 'ease-out-quart',
