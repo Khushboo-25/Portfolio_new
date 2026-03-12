@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khushboo Chaurasiya — Full Stack Developer & Competitive Programmer. IIT (BHU) graduate specialising in MERN stack and DSA. Open to SDE/Full-Stack roles.">
+    <meta name="keywords" content="Khushboo Chaurasiya, Full Stack Developer, MERN Stack, React, Node.js, IIT BHU, Software Engineer Portfolio">
+    <meta name="author" content="Khushboo Chaurasiya">
+    <meta property="og:title" content="Khushboo Chaurasiya | Full Stack Developer">
+    <meta property="og:description" content="Fresh IIT BHU graduate skilled in MERN Stack, DSA & Competitive Programming. Check out my projects and get in touch!">
+    <link rel="icon" type="image/png" sizes="32x32" href="./source/images/logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- AOS animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="./source/khushboo.css">
+
+    <title>Khushboo Chaurasiya | Full Stack Developer</title>
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <a href="#home" class="logo">
+            <span class="logo-bracket">&lt;</span>Khushboo<span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#works" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="https://drive.google.com/file/d/1jYwRERDn9OEsAEWBU8eNO6kLnc386Kdr/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-resume"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+        </nav>
+
+        <div class="nav-icons">
+            <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon" id="theme-icon"></i>
+            </button>
+            <button class="icon-btn" id="menu-btn" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="home" id="home">
+        <div class="hero-bg-glow"></div>
+        <div class="content" data-aos="fade-up" data-aos-duration="900">
+            <p class="hero-greeting">👋 Hello, I'm</p>
+            <h1 class="hero-name">Khushboo Chaurasiya</h1>
+            <h2 class="hero-role">
+                <span class="typed-prefix">A </span><span id="typed-text" class="typed-text"></span><span class="typed-cursor">|</span>
+            </h2>
+            <p class="hero-bio">B.Tech Graduate · IIT (BHU) Varanasi · Electrical Engineering</p>
+
+            <div class="hero-stats">
+                <a href="https://leetcode.com/u/khushboo_25/" target="_blank" rel="noopener" class="stat stat-link" aria-label="View LeetCode profile">
+                    <span class="stat-num">1500+</span>
+                    <span class="stat-label">LeetCode Solved <i class="fa-solid fa-arrow-up-right-from-square stat-ext"></i></span>
+                </a>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">6+</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">MERN</span>
+                    <span class="stat-label">Stack Expert</span>
+                </div>
+                <div class="stat-divider"></div>
+                <a href="https://codeforces.com/profile/khushboo_25" target="_blank" rel="noopener" class="stat stat-link" aria-label="View Codeforces profile">
+                    <span class="stat-num">CF</span>
+                    <span class="stat-label">Codeforces Active <i class="fa-solid fa-arrow-up-right-from-square stat-ext"></i></span>
+                </a>
+            </div>
+
+            <div class="hero-actions">
+                <a href="#works" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Hire Me</a>
+            </div>
+
+            <div class="hero-social">
+                <a href="https://github.com/Khushboo-25" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/khushboo-chaurasiya-7a13ab237/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/khushboo_2225/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:khushboo250104@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-image-wrap" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <div class="hero-image-ring"></div>
+            <img src="./source/images/img1-about.png" alt="Khushboo Chaurasiya" class="hero-img">
+        </div>
+
+        <a href="#about" class="scroll-down-indicator" aria-label="Scroll down">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+        <h2 class="heading" data-aos="fade-up">About <span>Me</span></h2>
+        <div class="about-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-info">
+                <div class="about-badge">🎓 IIT (BHU) Varanasi — Electrical Engineering</div>
+                <p>
+                    Hi, I'm <strong>Khushboo Chaurasiya</strong> — a fresh B.Tech graduate with a genuine passion for software development and problem-solving. I specialise in full-stack web development using the <strong>MERN stack</strong> and enjoy building scalable, user-centric applications.
+                </p>
+                <p>
+                    I've solved <strong>1500+ problems</strong> on LeetCode, Codeforces, and GFG — sharpening my algorithmic thinking every day. My strength lies in bridging backend logic with polished, responsive frontends.
+                </p>
+                <p>
+                    Currently looking for a full-time <strong>SDE / Full-Stack Developer</strong> role where I can contribute meaningfully from day one.
+                </p>
+
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-brands fa-leetcode"></i>
+                        <span>LeetCode — 1500+ Problems</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-code-branch"></i>
+                        <span>Codeforces &amp; GFG Active</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>Open to Remote / Hybrid</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Ayodhya, Uttar Pradesh</span>
+                    </div>
+                </div>
+
+                <div class="about-actions">
+                    <a href="https://drive.google.com/file/d/1jYwRERDn9OEsAEWBU8eNO6kLnc386Kdr/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+                    <a href="https://github.com/Khushboo-25" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="skills" id="skills">
+        <h2 class="heading" data-aos="fade-up">My <span>Skills</span></h2>
+
+        <!-- Languages -->
+        <div class="skill-category" data-aos="fade-up">
+            <h3 class="skill-category-label">Languages</h3>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="./source/images/skills/c.jpg" alt="C">
+                    <p class="skill-name">C</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="60">
+                    <img src="./source/images/skills/c++.jpg" alt="C++">
+                    <p class="skill-name">C++</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="120">
+                    <img src="./source/images/skills/js.jpg" alt="JavaScript">
+                    <p class="skill-name">JavaScript</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category" data-aos="fade-up">
+            <h3 class="skill-category-label">Frontend</h3>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="./source/images/skills/html.jpg" alt="HTML5">
+                    <p class="skill-name">HTML5</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="60">
+                    <img src="./source/images/skills/css.jpg" alt="CSS3">
+                    <p class="skill-name">CSS3</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="120">
+                    <img src="./source/images/skills/react js.png" alt="React.js">
+                    <p class="skill-name">React.js</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Backend & Database -->
+        <div class="skill-category" data-aos="fade-up">
+            <h3 class="skill-category-label">Backend &amp; Database</h3>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="./source/images/skills/node js.png" alt="Node.js">
+                    <p class="skill-name">Node.js</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="60">
+                    <img src="./source/images/skills/express.png" alt="Express.js">
+                    <p class="skill-name">Express.js</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="120">
+                    <img src="./source/images/skills/mongo db.png" alt="MongoDB">
+                    <p class="skill-name">MongoDB</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category" data-aos="fade-up">
+            <h3 class="skill-category-label">Tools &amp; Platforms</h3>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="./source/images/skills/github-logo.png" alt="Git & GitHub">
+                    <p class="skill-name">Git &amp; GitHub</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="60">
+                    <img src="./source/images/skills/vs code.png" alt="VS Code">
+                    <p class="skill-name">VS Code</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="120">
+                    <img src="./source/images/skills/matlab.png" alt="MATLAB">
+                    <p class="skill-name">MATLAB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="works" id="works">
+        <h2 class="heading" data-aos="fade-up">My <span>Projects</span></h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Full-stack applications, real-world problem solving, and interactive web experiences</p>
+
+        <div class="projects-grid">
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="project-img-wrap">
+                    <img src="./source/images/works/Blog website.png" alt="MERN Blog Website">
+                    <div class="project-overlay">
+                        <a href="https://github.com/Khushboo-25/MERN" target="_blank" rel="noopener" class="overlay-btn" aria-label="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">MERN Blog Website</h3>
+                    <p class="project-desc">Full-featured blog platform with user authentication (JWT), create/edit/delete posts, and a responsive UI.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">JWT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Khushboo-25/MERN" target="_blank" rel="noopener" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://github.com/Khushboo-25/MERN" target="_blank" rel="noopener" class="project-link project-link-live" data-deploy-pending title="Deploy this project to get a live link!"><i class="fa-solid fa-rocket"></i> Deploy →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="project-img-wrap">
+                    <img src="./source/images/works/mern appf.png" alt="Employee Data Management">
+                    <div class="project-overlay">
+                        <a href="https://github.com/Khushboo-25/MERN" target="_blank" rel="noopener" class="overlay-btn" aria-label="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Employee Management System</h3>
+                    <p class="project-desc">Full CRUD app for managing employee records with REST API backend and responsive React frontend.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">REST API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Khushboo-25/MERN" target="_blank" rel="noopener" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://github.com/Khushboo-25/MERN" target="_blank" rel="noopener" class="project-link project-link-live" data-deploy-pending title="Deploy this project to get a live link!"><i class="fa-solid fa-rocket"></i> Deploy →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="160">
+                <div class="project-img-wrap">
+                    <img src="./source/images/works/grocery-store.png" alt="E-commerce Grocery Store">
+                    <div class="project-overlay">
+                        <a href="https://github.com/Khushboo-25/MERN" target="_blank" rel="noopener" class="overlay-btn" aria-label="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">E-commerce Grocery Store</h3>
+                    <p class="project-desc">Dynamic grocery shopping site with a persistent cart, product filtering, and checkout flow.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">LocalStorage</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Khushboo-25/MERN" target="_blank" rel="noopener" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://github.com/Khushboo-25/MERN" target="_blank" rel="noopener" class="project-link project-link-live" data-deploy-pending title="Deploy this project to get a live link!"><i class="fa-solid fa-rocket"></i> Deploy →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="project-img-wrap">
+                    <img src="./source/images/works/Drum-Kit.png" alt="Drum Kit">
+                    <div class="project-overlay">
+                        <a href="https://github.com/Khushboo-25/Drum-Kit" target="_blank" rel="noopener" class="overlay-btn" aria-label="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Drum Kit</h3>
+                    <p class="project-desc">Interactive musical instrument website — play drum sounds via keyboard or click with visual feedback.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Web Audio</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Khushboo-25/Drum-Kit" target="_blank" rel="noopener" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://khushboo-25.github.io/Drum-Kit/" target="_blank" rel="noopener" class="project-link project-link-live"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="project-img-wrap">
+                    <img src="./source/images/works/TicTacTue.png" alt="Tic Tac Toe">
+                    <div class="project-overlay">
+                        <a href="https://github.com/Khushboo-25/MERN" target="_blank" rel="noopener" class="overlay-btn" aria-label="View on GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Tic Tac Toe</h3>
+                    <p class="project-desc">Two-player browser game with win-detection logic, score tracking, and animated turn transitions.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Khushboo-25/MERN" target="_blank" rel="noopener" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://github.com/Khushboo-25/MERN" target="_blank" rel="noopener" class="project-link project-link-live" data-deploy-pending title="Deploy this project to get a live link!"><i class="fa-solid fa-rocket"></i> Deploy →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="160">
+                <div class="project-img-wrap">
+                    <img src="./source/images/works/potfolio.png" alt="Portfolio Website">
+                    <div class="project-overlay">
+                        <a href="https://khushboo-25.github.io/Portfolio_new/khushboo.html" target="_blank" rel="noopener" class="overlay-btn" aria-label="View Live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-desc">This very site — a responsive personal portfolio with dark mode, AOS animations, and a skills showcase.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">GitHub Pages</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://khushboo-25.github.io/Portfolio_new/khushboo.html" target="_blank" rel="noopener" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Site</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+        <h2 class="heading" data-aos="fade-up">Get In <span>Touch</span></h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Open to full-time roles, freelance projects, or just a friendly chat!</p>
+
+        <div class="contact-container" data-aos="fade-up" data-aos-delay="150">
+
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>I'd love to hear from you — whether it's a job opportunity, a project idea, or just saying hi.</p>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:khushboo250104@gmail.com" class="contact-value">khushboo250104@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <span class="contact-label">Phone</span>
+                        <a href="tel:+918948971224" class="contact-value">+91 8948971224</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <span class="contact-label">Location</span>
+                        <span class="contact-value">Ayodhya, Uttar Pradesh, India</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-language"></i></div>
+                    <div>
+                        <span class="contact-label">Languages</span>
+                        <span class="contact-value">English, Hindi</span>
+                    </div>
+                </div>
+
+                <div class="social-row">
+                    <a href="https://github.com/Khushboo-25" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/khushboo-chaurasiya-7a13ab237/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/khushboo_2225/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Formspree: replace YOUR_FORM_ID below after signing up at https://formspree.io -->
+            <form class="contact-form" id="contact-form"
+                  data-formspree-endpoint="https://formspree.io/f/YOUR_FORM_ID"
+                  onsubmit="handleFormSubmit(event)">
+                <!-- hidden _replyto field so Formspree uses the sender's email -->
+                <input type="hidden" name="_replyto" id="cf-replyto">
+                <div class="form-group">
+                    <label for="cf-name">Your Name</label>
+                    <input type="text" id="cf-name" name="name" placeholder="e.g. Priya Sharma" required>
+                </div>
+                <div class="form-group">
+                    <label for="cf-email">Your Email</label>
+                    <input type="email" id="cf-email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="cf-subject">Subject</label>
+                    <input type="text" id="cf-subject" name="subject" placeholder="Job Opportunity / Project Collaboration">
+                </div>
+                <div class="form-group">
+                    <label for="cf-message">Message</label>
+                    <textarea id="cf-message" name="message" rows="5" placeholder="Hi Khushboo, I'd love to…" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full" id="form-submit-btn">
+                    <i class="fa-solid fa-paper-plane"></i> <span id="btn-text">Send Message</span>
+                </button>
+                <p class="form-note" id="form-status"></p>
+            </form>
+
+        </div>
+
+        <div class="footer-credit">
+            Designed &amp; Built by <span>Khushboo Chaurasiya</span> · 2025 &nbsp;·&nbsp;
+            <a href="https://github.com/Khushboo-25" target="_blank" rel="noopener">GitHub</a>
+        </div>
+    </section>
+
+    <!-- Back to Top -->
+    <button id="back-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./source/khushboo.js"></script>
+</body>
+</html>
