@@ -1,4 +1,4 @@
-﻿/* ======================================================
+/* ======================================================
    Khushboo Chaurasiya â€” Portfolio JS
    Features: typed animation, active nav scroll spy,
    scroll progress bar, back-to-top, mobile menu,
